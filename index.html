@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Magra&family=Red+Hat+Text:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-container">
+      <div class="header-logo">
+        <img src="assets/svg/Logo.svg" alt="logo" class="logo" width="30" height="30">
+        <span class="logo-text">Travel Portal</span>
+      </div>
+      <nav class="nav">
+        <ul class="navigation">
+          <li><a href="#preview" class="nav-link">How It Works</a></li>
+          <li><a href="#steps" class="nav-link">Plan Your Trip</a></li>
+          <li><a href="#destinations" class="nav-link">Destinations</a></li>
+          <li><a href="#stories" class="nav-link">Travel Stories</a></li>
+        </ul>
+      </nav>
+      <button class="button header-button login">
+          <span class="button-text  login">Login</span>
+      </button>
+
+    </div>
+  </header>
+
+  <div class="popup-background hidden">
+
+    <form class="popup show" name = 'popup'>
+      <div class="popup-container">
+        <span class="popup-title">Log in to your account</span>
+        <section class="popup-social">
+          <button type="button" class="popup-button facebook-login">
+            <img src="assets/svg/facebook-logo.svg" alt="facebook-icon">
+            <span>Sign In with Facebook</span>
+          </button>
+          <button type="button" class="popup-button google-login">
+            <img src="assets/svg/google-logo.svg" alt="google-icon">
+            <span>Sign In with Google</span>
+          </button>
+          <div class="middle-separator">
+            <div class="separator-line"></div>
+            <span>or</span>
+            <div class="separator-line"></div>
+          </div>
+        </section>
+        <section class="popup-registration">
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" class="popup-field email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" class="popup-field password" required>
+        <button type="submit" class="popup-button button-verification">Sign In</button>
+        <a href="#" class="change-password">Forgot Your Password?</a>
+        <div class="end-separator"></div>
+        </section>
+        <a href="#" class="popup-toggle"><span>Don’t have an account? </span><span>Register</span></a>
+      </div>
+    </form>
+    
+  </div>
+
+  <header class="mobile-header">
+    <div class="container header-container">
+      <div class="header-menu">
+        <img src="assets/svg/Logo.svg" alt="logo" class="logo" width="30" height="30">
+        <div class="toggle-nav"></div>
+      </div>
+      <div class="dark"></div>
+        <nav class="mobile-nav">
+          <div class="close-icon"></div>
+          <ul class="mobile-list">
+            <li><a href="#preview" class="nav-link">How It Works</a></li>
+            <li><a href="#destinations" class="nav-link">Destinations</a></li>
+            <li><a href="#steps" class="nav-link">Plan Your Trip</a></li>
+            <li><a href="#stories" class="nav-link">Travel Stories</a></li>
+            <li><a href="#" class="nav-link login">Account</a></li>
+            <li><a href="#footer" class="nav-link">Social Media</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+    
+  <main class="main">
+      
+    <div class="top-container">
+      <section class="section preview">
+        <div class="container">
+          <div class="trip-plan-block" id="preview">
+            <h1 class="title">Explore the beauty of the World</h1>
+            <span class="subtitle">Receive personalized recommendations for countries, hotels, activities and more</span>
+            <div class="search">
+              <input type="search" placeholder="What would you like to do?" name="search" class="search-area">
+              <button type="submit" class="button search-button"><span class="button-text search-button-text">Start Planning</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="section" id="steps">
+      <div class="container steps">
+        <h2 class="section-title">3 steps to the perfect trip</h2>
+        <div class="steps-items">
+          <div class="step-item">
+            <div class="step-item-square">
+              <img src="assets/svg/bike.svg" alt="bicycle" class="step-picture">
+            </div>
+            <span class="step-title">Tell us what you want to do</span>
+          </div>
+          <div class="step-item">
+            <div class="step-item-square">
+              <img src="assets/svg/calendar.svg" alt="calendar" class="step-picture">
+            </div>
+            <span class="step-title">Share us preferable dates</span>
+          </div>
+          <div class="step-item">
+            <div class="step-item-square">
+              <img src="assets/svg/plane.svg" alt="airplane" class="step-picture">
+            </div>
+            <span class="step-title">We will give you recommendations</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section destinations" id="destinations">
+      <h2 class="section-title">Popular destinations</h2>
+
+      <div class="gallery">
+
+        <div class="slider">
+
+          <div class="slider-photo">
+
+            <img src="assets/img/Rectangle-23.jpg" alt="iceland" class="photo" width="800" height="800">
+            <span class="photo-name">Spain</span>
+          </div>
+
+          <div  class="slider-photo">
+            <img src="assets/img/Rectangle-24.jpg" alt="japan"  class="photo"  width="800" height="800">
+            <span class="photo-name">Japan</span>
+          </div>
+
+          <div  class="slider-photo">
+            <img src="assets/img/Rectangle-25.jpg" alt="usa"  class="photo"  width="800" height="800">
+            <span class="photo-name">USA</span>
+          </div>
+
+        </div>
+
+        <div class="control control-left"></div>
+        <div class="control control-right"></div>
+
+        <a class="arrow-left" ></a>
+        <a class="arrow-right" ></a>
+
+      </div>
+
+      <div class="dots-wrapper">
+        <div class="dot"></div>
+        <div class="dot active-dot"></div>
+        <div class="dot"></div>
+      </div>
+        
+      </div>
+      <button class="button section-button">
+        <img src="assets/svg/arrow.svg" alt="arrow">
+        <span class="button-section-text">Find More</span>
+      </button>
+    </section>
+
+
+    <div class="footer-background">
+      <section class="section stories" id="stories">
+        <div class="container stories-container">
+          <h2 class="section-title">Travel stories</h2>
+          <div class="stories-items">
+            <div class="story-item">
+              <div class="story-item-image-repsonsive">
+                <div class="story-item-image story-item-image-1"></div>
+              </div>
+              <div class="story-text-block">
+                <h3 class="story-title">10 Photos of Attractive Thailand</h3>
+                <p class="story-text" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                       consectetur adipiscing elit dsdsdsdsdsdselit</p>
+                <a href="#" class="story-text-link">Read More</a>
+              </div>
+            </div>
+            <div class="story-item">
+              <div class="story-item-image-repsonsive">
+                <div class="story-item-image story-item-image-2"></div>
+              </div>
+              <div class="story-text-block">
+                <h3 class="story-title">Canyonlands National Park, Utah</h3>
+                <p class="story-text" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                   ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit dsdsdsdsdsdselit</p>
+                <a href="#"  class="story-text-link">Read More</a>
+              </div>
+            </div>
+            <div class="story-item">
+              <div class="story-item-image-repsonsive">
+                <div class="story-item-image story-item-image-3"></div>
+              </div>
+              <div class="story-text-block">
+                <h3 class="story-title">I left my heart in the Mountains!</h3>
+                <p class="story-text" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                   ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit dsdsdsdsdsdselit</p>
+                <a href="#"  class="story-text-link">Read More</a>
+              </div>
+            </div>
+            <div class="story-item">
+              <div class="story-item-image-repsonsive">
+                <div class="story-item-image story-item-image-4"></div>
+              </div>
+              <div class="story-text-block">
+                <h3 class="story-title">The Longest journey in my life!</h3>
+                <p class="story-text" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                   ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit dsdsdsdsdsdselit</p>
+                <a href="#"  class="story-text-link">Read More</a>
+              </div>
+            </div>
+          </div>
+            <button class="button section-button">
+              <img src="assets/svg/arrow.svg" alt="arrow">
+              <span class="button-section-text">See More</span>
+            </button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container footer-container">
+      <div class="footer-temporary">
+        <a href="https://rs.school/js-stage0/" class="temporary-item-link" target="_blank">
+          <img src="assets/svg/rs_school.svg" alt="rs_school" class="temporary-item temporary-item-rs">
+        </a>
+        <a href="https://github.com/Faz-R" class="temporary-item-link" target="_blank">
+          <img src="assets/svg/github.svg" alt="github" class="temporary-item temporary-item-github">
+        </a>
+      </div>
+      <span class="footer-copyright">All Rights Reserved © Travel Portal</span>
+      <div class="footer-social-media">
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="social-media-link">
+            <img src="assets/svg/akar-icons_instagram-fill.svg" alt="instagram" class="social-media">
+          </a></li>
+          <li><a href="#" target="_blank"  class="social-media-link">
+            <img src="assets/svg/akar-icons_video.svg" alt="youtube" class="social-media">
+          </a></li>
+          <li><a href="#" target="_blank"  class="social-media-link">
+            <img src="assets/svg/akar-icons_twitter-fill.svg" alt="twitter" class="social-media">
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </footer> 
+  <script src="index.js"></script>
+</body>
+</html>
